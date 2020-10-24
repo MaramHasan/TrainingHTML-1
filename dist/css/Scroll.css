@@ -1,0 +1,44 @@
+html,
+body {
+  height: 100%; }
+
+body {
+  width: 100%; }
+
+.section {
+  height: 50%;
+  color: #899eb5; }
+
+.scene {
+  height: 100%;
+  width: 100%; }
+
+.center {
+  justify-content: center;
+  align-items: center;
+  height: 100%; }
+
+#address {
+  text-align: center;
+  margin: auto;
+  color: black;
+  padding: 20px; }
+
+.viewer {
+  height: 50%;
+  position: sticky;
+  margin: auto;
+  max-width: 266.66px;
+  width: 100%;
+  background-image: url("../../images/22.png");
+  background-repeat: no-repeat;
+  background-position: 0;
+  top: 20px; }
+
+.viewer.frame1 {
+  background-position: -266px; }
+
+.viewer.frame2 {
+  background-position: -532px; }
+
+/*# sourceMappingURL=Scroll.css.map */

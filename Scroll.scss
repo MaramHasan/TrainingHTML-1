@@ -1,0 +1,69 @@
+// ==========================================================
+
+html,
+body {
+  height:100%;
+}
+
+body {
+  width:100%;
+}
+
+
+// UTILITIES
+// ==========================================================
+
+
+.section {
+  height: 50%;
+  color: #899eb5;
+ 
+}
+
+.scene {
+  height: 100%;
+  width: 100%;
+ 
+}
+
+.center {
+  
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+// REQUIRED STYLES
+// ==========================================================
+
+$frame-count: 2;
+$offset-val: 100;
+#address{
+    text-align: center;
+    margin:auto;
+    color:black;
+    padding:20px;
+
+}
+.viewer {
+  // CSS ONLY EXAMPLE
+  // animation: show-product 1s steps($frame-count) infinite;
+  height: 50%;
+  position: sticky;
+  margin:auto;
+  max-width: 266.66px;
+  width: 100%;
+  background-image: url('../../images/22.png');
+  background-repeat: no-repeat;
+  background-position: 0 ;
+  top:20px;
+}
+
+@for $i from 1 through $frame-count {
+  .viewer.frame#{$i} {
+    
+    background-position: -(($i * $offset-val)*2.66 ) + px ;
+  }
+}
+

@@ -1,0 +1,143 @@
+*
+  box-sizing: border-box
+  max-width: 100%
+
+body
+  background-color: white
+
+.items a
+  color: white
+
+#firstbody
+  background-color: #093145
+  text-align: center
+
+  h1
+    letter-spacing: 10px
+    color: yellow
+
+  p
+    color: white
+
+  a
+    background-color: yellow
+    color: #093145
+    text-decoration: bold
+
+#side
+  text-align: center
+  align-content: center
+  border: 2px solid #093145
+  margin: 10px
+  justify-content: center
+  width: 100%
+
+  h1
+    width: 100%
+    letter-spacing: 6px
+    color: #093145
+
+  a
+    color: #093145
+    align-content: center
+    text-align: center
+    font-size: 25px
+    width: 100%
+
+.spliter
+  width: 100%
+  background-color: gray
+  height: 1px
+
+@media screen and (max-width: 1023px) and (min-width: 768px)
+  #side
+    width: 100%
+
+    h1
+      letter-spacing: 2px
+      font-size: 20px
+
+    a
+      font-size: 15px
+
+  .productBody
+    margin: auto
+    display: flex
+    padding: 10px
+
+    figure
+      justify-content: space-around
+      margin: 15px
+
+    img
+      margin: 3px
+
+  .mobileHeader
+    display: none
+
+@media screen and (min-width: 1023px)
+  .productBody
+    margin: auto
+    display: flex
+    padding: 10px
+
+    figure
+      justify-content: space-around
+      margin: 15px
+
+    img
+      margin: 3px
+
+  .mobileHeader
+    display: none
+
+@media screen and (max-width: 768px)
+  #side
+    display: none
+
+  .productBody
+    display: block
+    margin: auto
+    padding: 10px
+
+    figure
+      display: flex
+      justify-content: space-around
+      margin: 15px
+
+      >
+        img
+          width: 300px
+          height: 300px
+
+        div
+          width: 300px
+          height: 300px
+          margin: 10px
+
+    img
+      margin: 3px
+
+  .mobileHeader
+    display: flex
+    justify-content: space-around
+    margin: 15px
+
+  #t
+    display: none
+
+  .mobileHeader span
+    width: 300px
+    text-align: center
+    border-top: 1px solid black
+    border-bottom: 1px solid black
+    font-size: large
+    padding: 10px
+
+.productBody
+  li
+    list-style: none
+
+  margin: 0
+  justify-content: center
+  align-items: center

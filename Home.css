@@ -1,0 +1,49 @@
+
+
+/* Create huge scrolling area (imitates height of a page) */
+main { padding: 200px 0 1500px 0; overflow: hidden; }
+
+/* Styles for wrap for demo */
+#scene {
+  text-align: center;
+  background: #fff;
+  width:600px;
+  box-shadow: 0 0 6px rgba(153, 153, 153, 0.25);
+  position: relative;
+}
+#scene1 {
+    text-align: center;
+    background: #fff;
+    width:550px;
+    padding:10px;
+    box-shadow: 0 0 6px rgba(153, 153, 153, 0.25);
+    position: relative;
+    opacity: 0;
+    left:-300px;
+    top:60px;
+  }
+  #scene2{
+    text-align: center;
+    width:550px;
+    box-shadow: 0 0 6px rgba(153, 153, 153, 0.25);
+    position: relative;
+    left:1000px;
+    padding:10px;
+    opacity:0;
+    top:150px;
+  }
+  #scene3{
+    width:600px;
+    box-shadow: 0 0 6px rgba(153, 153, 153, 0.25);
+    position: relative;
+    top:160px;
+    opacity:0;
+    padding:10px;
+    left:300px;
+  }
+/* Default Animation Styles */
+#animation div {
+  margin:  auto;
+  position: relative;
+  display: inline-flex;
+}
