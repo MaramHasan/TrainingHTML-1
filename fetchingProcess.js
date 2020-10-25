@@ -217,8 +217,8 @@ div.tabindex='0';
 div.append(p,p2,divs,p3);
 fig.tabindex='0';
   DivImg.append(div);
- div.onclick=function(){
-window.open('./ProductPage.html?'+DivImg.id+"|");
+ img.onclick=function(){
+window.open('./Car.html?'+DivImg.id+"|");
  }
  
 MainContent.append(DivImg);
