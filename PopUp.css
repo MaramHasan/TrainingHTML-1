@@ -10,6 +10,7 @@
     height: 100vh;
     width:100vw;
     z-index: 999;
+ 
 }
 .enable-mask{
     display:block;
@@ -18,34 +19,6 @@
 .row {
     margin:0 !important;
 }
- .popover{
-     position:absolute;
-     top:0;
-     left:0;
-     z-index:1060;
-     display:block;
-     max-width:276px;
-     font-style:normal;
-     font-weight:400;
-     line-height:1.5;
-     text-overflow: ellipsis;
-     text-align:left;
-     text-align:start;
-     text-decoration:none;
-     text-shadow:none;
-     text-transform:none;
-     letter-spacing:normal;
-     word-break:normal;
-     word-spacing:normal;
-     white-space:nowrap;
-     line-break:auto;
-     font-size:.875rem;
-     word-wrap:break-word;
-     background-color:#fff;
-     background-clip:padding-box;
-     border:1px solid rgba(0,0,0,0.2);
-     border-radius:.1875rem
-    }
     .popover .arrow{
         position:absolute;
         display:block;
@@ -64,24 +37,30 @@
     }
  .line-item-pricing-info+.price
  {
-     font-size:1em;
+
+     font-size:12px;
     font-weight:bolder
 }
  .line-item-price-quantity-info{
-     margin-top:0.625em;
+
      border-top:1px solid #ccc
     }
- .line-item-total-text{font-size:0.813em}
- .non-adjusted-price{display:none}
- .line-item-header{   
+ .line-item-total-text{
+     font-size:12px
+    }
+
+ .line-item-header {   
      display:flex;
      flex-direction:row;
-     justify-content:space-between
+     justify-content: space-between;
+     width:80%;
+     font-size: 20px;
+    padding-bottom:10px;
     }
  .product-line-item-details{
      overflow-y:auto
     }
- .order-product-summary .card .card-body,
+
   .minicart .card .card-body {
     padding: 0;
 }
@@ -91,31 +70,39 @@
      align-items:center ; 
      position :relative;
      left:85px;
+     top:16px;
     }
  
  .minicart h1{
      color:#0e1536;
-   font-size:1.125rem;
+   font-size:16px;
    font-weight:bold;
-   line-height:1.375rem;
+   line-height:16px;
    text-transform:uppercase
 }
  
  .minicart .view-cart-link
  {color:#0e1536;
-    font-size:.875rem;
-    letter-spacing:0.03px;
-    line-height:1.25rem
+    font-size:16px;
+
+    line-height:16px
 }
  
  .minicart .remove-btn
- {color:#a6aabb;
-    background-color:#fff;
-    font-size:1.625em;
-    padding:0;
-    border:0
+ {
+    
+    color: #a6aabb;
+    padding: 0;
+    top: 1px;
+    background-color: #fff;
+    font-size: 25px;
+    position: absolute;
+    right: 12px;
+    border: 0;
+
+   
 }
- 
+
  .minicart .remove-btn:hover,
  .minicart .remove-btn:active{
      background:none;
@@ -128,24 +115,33 @@
  
  .minicart .product-summary{
      margin-right:-20px;
-     max-height:550px;
+     max-height:500px;
      overflow-y:auto;
      overflow-x:hidden;
-     padding-right:20px
+     padding-right:20px;
+     max-width:500px;
     }
  
  .minicart .card+.card .product-line-item{
-     border-top:1px solid #c1c6c8
+     border-top:1px solid #a6aabb ; 
+
+
     }
+  
  
  .minicart .card .product-line-item{
-     padding-bottom:18px;
-     padding-top:18px
+     padding-bottom:10px;
+     padding-top:10px
     }
  
  .minicart .card .line-item-pricing-info{
      display:flex;
-     align-items:center
+     align-items:center ; 
+     margin:1px;
+
+    }
+    .minicart .card .line-item-attributes{
+        margin: 1px;
     }
  
  .minicart .card .qty-card-quantity-label,
@@ -159,16 +155,10 @@
     }
     .minicart .approaching-discounts{
         padding:10px 21px;
-        font-size:.875rem;
-        line-height:1.125rem
+        font-size:16px;
+   
     }
- 
- .minicart .free-shipping{
-     color:#4d4d4d;
-     font-size:.875rem;
-     line-height:1.0625rem;
-     padding-top:12px
-    }
+
  
  .minicart .free-shipping p{
      margin-bottom:0
@@ -219,15 +209,15 @@
     }
     .minicart .popover .cart-empty{
         color:#000;
-        font-size:1rem;
+        font-size:12px;
         font-weight:500;
-        line-height:1.875rem
+        line-height:16px
     }
     .minicart .estimated-total{
         color:#0e1536;
-        font-size:1rem;
+        font-size:15px;
         font-weight:bold;
-        line-height:1.1875rem;
+        line-height:16px;
         margin-bottom:20px
     }
         .minicart .estimated-total p{
@@ -236,75 +226,46 @@
         .minicart .checkout-btn{
             text-transform:uppercase
         }
- .minicart .line-item-name{
-     width:90%
-    }
-    .order-product-summary .card,
+     
+
     .minicart .card
     {border:0;margin-bottom:0
     }
-    .order-product-summary .card .card-body,
+
     .minicart .card .card-body{
         padding:0
     }
-    .order-product-summary .card .item-info,
-    .order-product-summary .card .product-info-attributes,
+
     .minicart .card .item-info,
     .minicart .card .product-info-attributes{
         padding-left:12px
     }
- .order-product-summary .card .item-info .line-item-name,
- .order-product-summary .card .product-info-attributes .line-item-name,
+
+
  .minicart .card .item-info .line-item-name,
  .minicart .card .product-info-attributes .line-item-name{
-     font-size:.9375rem;
-     line-height:1.375rem;
-     color:#000;margin-bottom:0;
+     font-size:12px;
+     line-height:16px;
+     color:#000;
+     margin-bottom:0;
      overflow:hidden;
      white-space:nowrap;
      text-overflow: ellipsis !important;
-     width:75%;
+    width:90%;
     }
- .order-product-summary .card .product-line-item-details,
+ .card .product-line-item-details,
  .minicart .card .product-line-item-details{
      overflow:hidden
     }
- .order-product-summary .card .product-image,
+ .card .product-image,
  .minicart .card .product-image{
      max-width:80px
-    }
- .order-product-summary .card .line-item-attributes,
- .order-product-summary .card .line-item-total-price-label,
- .order-product-summary .card .qty-card-quantity-label,
- .order-product-summary .card .line-item-promo,
- .order-product-summary .card .unit-price-label,
- .minicart .card .line-item-attributes,
- .minicart .card .line-item-total-price-label,
- .minicart .card .qty-card-quantity-label,
- .minicart .card .line-item-promo,
- .minicart .card .unit-price-label{
-     color:#000;
-     font-size:.8125rem;
-     font-weight:normal;
-     line-height:1.25rem
-    }
- .order-product-summary .card .line-item-promo,
+ }
 
  .minicart .card .line-item-promo{
      color:#15154d
-    }.order-product-summary .card .price,.minicart .card .price{
-        display:flex
     }
- .order-product-summary .card .price .strike-through,
- .minicart .card .price .strike-through{
-     order:2;
-     margin:0;
-     font-weight:normal
-    }
- .order-product-summary .card .price .line-item-total-price-amount,
- .minicart .card .price .line-item-total-price-amount{
-     order:1;
-     margin-right:4px
-    }
+
+ 
  
 
