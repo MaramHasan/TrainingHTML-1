@@ -9,7 +9,7 @@
     opacity:.75;
     height: 100vh;
     width:100vw;
-    z-index: 999;
+    z-index: 1;
  
 }
 .enable-mask{
@@ -18,6 +18,46 @@
 }
 .row {
     margin:0 !important;
+}
+.modal{
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+ 
+}
+.modal-backdrop{
+    opacity: 0.4 !important;
+}
+.modal-dialog{
+    display: flex;
+}
+.modal-content
+{
+    display: flex;
+    width:80%;
+    border:1px solid #888;
+    background-color: #fefefe;
+    margin: auto;
+    padding:20px;
+
+}
+
+.close{
+    font-weight: bold;
+    float: left;
+    color:#aaaaaa;
+    font-size: 28px;
+}
+.close:hover,.close:focus{
+cursor: pointer;
+text-decoration: none;
 }
     .popover .arrow{
         position:absolute;
